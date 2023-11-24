@@ -1,10 +1,10 @@
 
 
-# Arch Music Bot <img src="https://img.shields.io/github/v/release/ArchBots/ArchMusic?color=green&logo=github&logoColor=red&style=social" alt="RELEASE">
+# Worexis Music Bot <img src="https://img.shields.io/github/v/release/ArchBots/ArchMusic?color=green&logo=github&logoColor=red&style=social" alt="RELEASE">
 
 <img src="https://telegra.ph/file/3e72df6ef787df25f008e.jpg" align="middle" width="200" height="200"/>
 
-[Arohi Music Bot](https://t.me/UMIKO_CHAT_BOT) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
+[Worexis Music Bot](https://t.me/UMIKO_CHAT_BOT) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
 
 * Youtube, Soundcloud, Apple Music, Spotify, Resso, Live Streams and Telegram Audios & Videos support.
 * Written from scratch, making it stable and less crashes with attractive thumbnails.
