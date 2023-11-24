@@ -16,7 +16,6 @@ pyrogram==2.0.106
 python-dotenv
 pyyaml
 requests
-git+https://github.com/pikaws/worexis-music-speedtest-cli
 spotipy
 tgcrypto
 unidecode
