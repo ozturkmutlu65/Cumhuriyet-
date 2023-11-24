@@ -12,7 +12,7 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", 23226549))
+API_ID = int(getenv("API_ID", "23226549"))
 
 API_HASH = getenv("API_HASH", "2e6a1e4d566dad0f3e1d6ba9dadd32a3")
 
@@ -52,7 +52,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","WorexisMusic")
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", 6943797851).split())
+    map(int, getenv("OWNER_ID", "6943797851").split())
 
 )  # Input type must be interger
 
