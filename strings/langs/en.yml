@@ -242,10 +242,10 @@ queue_5 : "Sırada Sadece Bir Parça Var, Lütfen Biraz Daha Parça Ekleyin.  "
 
 # All Streaming Lines
 
-stream_1 : "✯ **Yayın Başladı** ✯\n\n🥀 **Talep Eden :-** {0}\n🔦**Şarkı Bilgisi :-🔗 **[Burada]({1})"
-stream_2 : "➻ **Yayın Başladı**\n\n🥀 **Talep Eden :-** {0}"
-stream_3 : "✯ **Yayın Başladı** ✯\n\n↬ **Başlık :-** {0}\n⏰**Dakika**:- {1}\n🥀 **Talep Eden :-** {2}"
-stream_4 : "➻ **Yayın Başladı**\n\n↬ **Başlık :-** [{0}]({1})\n⏰**Dakika**:- {2}\n🥀 **Talep Eden :-** {3}"
+stream_1 : "✯ **Yayın Başladı** ✯\n\n👉 **Talep Eden :-** {0}\n🔦**Şarkı Bilgisi :-🔗 **[Burada]({1})"
+stream_2 : "➻ **Yayın Başladı**\n\n👉 **Talep Eden :-** {0}"
+stream_3 : "✯ **Yayın Başladı** ✯\n\n↬ **Başlık :-** {0}\n⏰**Dakika**:- {1}\n👉 **Talep Eden :-** {2}"
+stream_4 : "➻ **Yayın Başladı**\n\n↬ **Başlık :-** [{0}]({1})\n⏰**Dakika**:- {2}\n👉 **Talep Eden :-** {3}"
 # Inline Buttons
 
 #General Buttons
