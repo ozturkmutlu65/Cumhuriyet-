@@ -1,4 +1,14 @@
-name : English
+#
+# Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
+#
+# This file is part of < https://github.com/ArchBots/ArchMusic > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
+#
+# All rights reserved.
+#
+
+name : 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English
 
 # General Strings
 general_1 : "Bir kullanıcının mesajını yanıtlayın veya username/user_id verin."
@@ -9,7 +19,7 @@ general_5 : "Bu eylemi gerçekleştirmek için sesli sohbet haklarına sahip yö
 general_6 : "Bot sesli sohbette yayın yapmıyor."
 
 # Classes - Telegram.py
-tg_1 : "Bot şu anda indirilenlerle **Aşırı yüklenmiş**. Lütfen @OctopusGameSahip hesabına düzeltmesi için bu mesajı bildiriniz.\n\n**Deneme Süresi:** {0} (__beklenen süre__))"
+tg_1 : "Bot şu anda indirilenlerle **Aşırı yüklenmiş**. Lütfen @Worexis hesabına düzeltmesi için bu mesajı bildiriniz.\n\n**Deneme Süresi:** {0} (__expected time__))"
 tg_2 : "Telegram'dan Medya İndirilirken Hata Oluştu."
 
 # Core - Call.py
@@ -80,7 +90,7 @@ start_3 : "Beni Grubunuza Davet Ettiğiniz İçin Teşekkürler.\n\n**Çalışma
 start_4 : "**{0}'unun Sahibi {1} Sohbetinize Katıldı.**"
 start_5 : "**{0}'u Çok Kıymetli {1} Beyefendinin Grubunuza Katıldığını Fark Etti. Kendisine Saygılarımı Sunarım.** 🙏"
 start_6 : ❗️ **Süper Grup Gerekli** ❗️ Lütfen Grubunuzu **Süper Gruba** dönüştürün ve sonra beni tekrar ekleyin. \n\n**Süper grup nasıl yapılır? 1-** Üyeler listesine gelin ve sağ üstteki kalem işaretine basın.\n**2-** Yeni üyeler için sohbet geçmişi ayarını Görünür olarak düzenleyin. Şimdi botu tekrar ekleyebilirsiniz"
-start_7 : "**Octopus Müzik Botun Grup Kapasitesi Dolduğu İçin Yeni Bot olarak Kraken Müzik Botunu Oluşturduk** \n [Buraya Tıklayarak Yeni Botu Görebilirsiniz]({0})"
+start_7 : "**Kara Listeye Alınmış Sohbet**\n\nSohbetiniz Bot tarafından kara listeye alındı. Lütfen herhangi bir Sudo Kullanıcısından önce sohbeti beyaz listeye almasını isteyin. [Buradan Sudolist'i]({0}) işaretleyin"
 
 # Help
 help_1 : "**Komutlar ve Öğreticileri Görmek İçin Aşağadaki Butonları Kullanınız  **\n\nGrup Üyelerinin Sadece Oynatma Komutlarını, Grup Adminlerininse Ayrıca Admin Komutlarını İncelemeleri Yeterli Olacaktır. "
@@ -99,6 +109,7 @@ setting_13 : "Etkin grup aramasında oynatma modu değiştirilemez. Lütfen önc
 setting_14 : "⁉️ Bu Nedir?\n\nEtkinleştirildiğinde, Bot yürütülen komutları (/play, /pause, /stop vb.) hemen siler.\n\nBot, bunun düzgün çalışması için mesajları silme yetkisine sahip olmalıdır."
 setting_15 : "Eş çözümlenemedi, Kanalınıza bot eklediğinizden ve onu yönetici olarak terfi ettirdiğinizden emin olun.\n\n/channelplay'i tekrar ayarlamayı deneyin..."
 setting_16 : "⁉️ Bu Nedir?\n\nAktive Ettiğiniz Zaman Bot 2 Saatte Bir Botun Nasıl Kullanılacağı İle İlgili İpuçları Verir."
+
 
 set_cb_1 : "Ses Kalitesi Paneli  "
 set_cb_2 : "Video Kalitesi Paneli  "
