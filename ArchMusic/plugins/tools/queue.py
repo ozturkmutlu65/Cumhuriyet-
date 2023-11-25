@@ -99,17 +99,17 @@ async def ping_com(client, message: Message, _):
             IMAGE = config.SOUNCLOUD_IMG_URL
         else:
             IMAGE = get_image(videoid)
-    send = (     
-        "**⌛️Süre:** Bilinmeyen Süreli Akış\n\nSıradaki listenin tamamını almak için aşağıdaki düğmeye tıklayın."
+    send = (
+        "**⌛️Duration:** Unknown Duration Stream\n\nClick on button below to get whole queued list."
         if DUR == "Unknown"
-        else "\nSıradaki listenin tamamını almak için aşağıdaki düğmeye tıklayın.""
+        else "\nClick on button below to get whole queued list."
     )
-    cap = f"""**{config.MUSIC_BOT_NAME} Oynatıcı**
+    cap = f"""**{config.MUSIC_BOT_NAME} Player**
 
-🎥**Oynatılıyor:** {title}
+🎥**Playing:** {title}
 
-🔗**Yayın Türü:** {typo}
-🙍‍♂️**Oynayan:** {user}
+🔗**Stream Type:** {typo}
+🙍‍♂️**Played By:** {user}
 {send}"""
     upl = (
         queue_markup(_, DUR, "c" if cplay else "g", videoid)

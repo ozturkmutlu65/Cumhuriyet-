@@ -12,17 +12,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = int(getenv("API_ID", "23226549"))
 
-API_HASH = getenv("API_HASH", "")
+API_HASH = getenv("API_HASH", "2e6a1e4d566dad0f3e1d6ba9dadd32a3")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "6774892754:AAGEcTemU9Qp370Mln4BBta6hznU-Py5GBY")
 
 # Database to save your chats and stats.
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://WorexisMusic:WorexisMusic@cluster0.2yxgjtv.mongodb.net/?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 
@@ -42,17 +42,17 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001839097933"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","WorexisMusic")
 
 # Your User ID.
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "6943797851").split())
 
 )  # Input type must be interger
 
@@ -136,9 +136,9 @@ GITHUB_REPO = getenv("GITHUB_REPO", None)
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "2041df9cbcd142cba804578a2cf85939")
 
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "80ffd296320e49299830e80b11e3bf73")
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
 
@@ -156,7 +156,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "50"))
 
 CLEANMODE_DELETE_MINS = int(
 
-    getenv("CLEANMODE_MINS", "3")
+    getenv("CLEANMODE_MINS", "50")
 
 )  # Remember to give value in Seconds
 
@@ -184,7 +184,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "")
+STRING1 = getenv("STRING_SESSION", "BAFiaLUAJ5Mvyu3hOiLLy5JLjFoFzQUddDzL_B-t6jn4o06d44vQersHMiX5Tnj7Dbtrm04SdTsWH7FMT5gwEcvdLv8DCNr9MxkUyqJjK4j2wKWFt8cvfpLmIbnYx4bl3U4YPSVUJ29M2JvfomtGLPmL3Ilhx4E8UVhR7AnlqWA-4d78Vp-Gh8lIJyVykDpw26NQ_jY15QdTC3RF9y03xcrA8wolixkoxvoaIr3MtkU6Ap5xhdNzkFarTprqRxOsNz0pZeNkprjamKWCyyTcn66negbMPk_2SfAzC-l3gc7plJJ_T7dl8COANIr2t7QOSdqsSgaOqjoyJDbRR-hekKPiX52vawAAAAGfltbBAA")
 
 STRING2 = getenv("STRING_SESSION2", None)
 
