@@ -9,7 +9,7 @@ Bot tamamen açık kaynak kodludur istediğiniz gibi kullanabilirsiniz.
 ## 🖇 VPS Deployment
 <code>
 git clone https://github.com/ToxicTR/Toxic-Music
-cd AmandaMusicBot
+cd Toxic-Music
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install python3-pip ffmpeg -y
 sudo pip3 install -U pip
