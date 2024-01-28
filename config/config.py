@@ -12,17 +12,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", "23226549"))
+API_ID = int(getenv("API_ID", ""))
 
-API_HASH = getenv("API_HASH", "2e6a1e4d566dad0f3e1d6ba9dadd32a3")
+API_HASH = getenv("API_HASH", "")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "6774892754:AAGEcTemU9Qp370Mln4BBta6hznU-Py5GBY")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 # Database to save your chats and stats.
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://WorexisMusic:WorexisMusic@cluster0.2yxgjtv.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 
@@ -42,17 +42,17 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001839097933"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","WorexisMusic")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","")
 
 # Your User ID.
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "6943797851").split())
+    map(int, getenv("OWNER_ID", "").split())
 
 )  # Input type must be interger
 
