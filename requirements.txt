@@ -4,6 +4,7 @@ dnspython
 ffmpeg-python
 gitpython
 hachoir
+heroku3
 lyricsgenius
 motor
 ntgcalls==1.1.2
@@ -22,3 +23,4 @@ tgcrypto
 git+https://github.com/alexmercerind/youtube-search-python@main
 git+https://github.com/joetats/youtube_search@master
 numpy
+yt_dlp
