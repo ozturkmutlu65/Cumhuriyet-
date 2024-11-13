@@ -1,3 +1,12 @@
+#
+# Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
+#
+# This file is part of < https://github.com/ArchBots/ArchMusic > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
+#
+# All rights reserved.
+
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
@@ -122,7 +131,7 @@ async def skip(cli, message: Message, _, chat_id):
                     check[0]["dur"],
                     user,
                 ),
-                reply_markup=InlineKeyboardMarkup(button),
+                
             )
         db[chat_id][0]["mystic"] = run
         db[chat_id][0]["markup"] = "tg"
@@ -152,7 +161,7 @@ async def skip(cli, message: Message, _, chat_id):
                     check[0]["dur"],
                     user,
                 ),
-                reply_markup=InlineKeyboardMarkup(button),
+                
             )
         db[chat_id][0]["mystic"] = run
         db[chat_id][0]["markup"] = "stream"
@@ -170,7 +179,7 @@ async def skip(cli, message: Message, _, chat_id):
                     check[0]["dur"],
                     user,
                 ),
-                reply_markup=InlineKeyboardMarkup(button),
+                
             )
         db[chat_id][0]["mystic"] = run
         db[chat_id][0]["markup"] = "tg"
@@ -185,7 +194,7 @@ async def skip(cli, message: Message, _, chat_id):
                 text=_["stream_3"].format(
                     title, check[0]["dur"], user
                 ),
-                reply_markup=InlineKeyboardMarkup(button),
+                
             )
             db[chat_id][0]["mystic"] = run
             db[chat_id][0]["markup"] = "tg"
@@ -195,7 +204,7 @@ async def skip(cli, message: Message, _, chat_id):
                 text=_["stream_3"].format(
                     title, check[0]["dur"], user
                 ),
-                reply_markup=InlineKeyboardMarkup(button),
+                
             )
             db[chat_id][0]["mystic"] = run
             db[chat_id][0]["markup"] = "tg"
@@ -209,7 +218,7 @@ async def skip(cli, message: Message, _, chat_id):
                     check[0]["dur"],
                     user,
                 ),
-                reply_markup=InlineKeyboardMarkup(button),
+                
             )
             db[chat_id][0]["mystic"] = run
             db[chat_id][0]["markup"] = "stream"
