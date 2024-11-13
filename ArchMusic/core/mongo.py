@@ -40,5 +40,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.ArchMusic
-    pymongodb = _mongo_sync_.ArchMusic
+    mongodb = _mongo_async_.Kaal
+    pymongodb = _mongo_sync_.Kall
