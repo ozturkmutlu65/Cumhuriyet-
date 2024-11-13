@@ -116,8 +116,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, videoid, chat_id):
     buttons = [
         [
-        buttons = [
-        [
+        
             InlineKeyboardButton(
                 text="🍁SAHİP🍁", url="https://t.me/ELLYO47",
             ),
