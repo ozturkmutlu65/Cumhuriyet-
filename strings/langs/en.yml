@@ -24,7 +24,7 @@ tg_2 : "Telegram'dan Medya İndirilirken Hata Oluştu."
 
 # Core - Call.py
 call_1 : "Bot, asistan hesabını grububunuza davet etmek için **Yönetici** İzni gerektirir.\n\Lütfen bota davet yetkisi verin."
-call_2 : "**Asistanı Grubunuzda yasaklamışsınız**, lütfen yasağı kaldırın! \nAsistanın bilgileri aşağıda unban yaparsanız tekrar katılabilir. Veya grup ayarlarında çıkarılan kullanıcılar listesinde asistanı bulup engeli kaldırın. Yapamazsanız @OctopusGameSahip hesabına ulaşın.\n\n**Asistan Kullanıcı Adı:** @{0}\n**Asistan ID:** {1}"
+call_2 : "**Asistanı Grubunuzda yasaklamışsınız**, lütfen yasağı kaldırın! \nAsistanın bilgileri aşağıda unban yaparsanız tekrar katılabilir. Veya grup ayarlarında çıkarılan kullanıcılar listesinde asistanı bulup engeli kaldırın. Yapamazsanız  hesabına ulaşın.\n\n**Asistan Kullanıcı Adı:** @{0}\n**Asistan ID:** {1}"
 call_3 : "Asistan Hesabı sohbetinize katılırken sorun oluştu.\nLütfen @{0} hesabını gruba kendiniz ekleyin veya @SigmaMan3169 hesabına yazın.\n\n**Sistem Notu**: {1}"
 call_4 : "Bot, asistan hesabını sohbet grubunuza davet etmek için **Kullanıcıları Bağlantı Yoluyla Davet Et** Yetkisi gerektirir.\nLütfen bota davet yetkisi verin."
 call_5 : "Asistan Hesabı 5 Saniye içinde katılacak.. Lütfen Bekleyin."
@@ -242,15 +242,15 @@ queue_5 : "Sırada Sadece Bir Parça Var, Lütfen Biraz Daha Parça Ekleyin.  "
 
 # All Streaming Lines
 
-stream_1 : "✯ **Yayın Başladı** ✯\n\n👉 **Talep Eden :-** {0}\n🔦**Şarkı Bilgisi :-🔗 **[Burada]({1})"
+stream_1 :  "Ş𝕌 𝔸ℕ𝔻𝔸 Ç𝔸𝕃𝔸ℕ ℙ𝔸ℝÇ𝔸\n\n🍀𝗦̧𝗮𝗿𝗸ı 𝗮𝗱ı: {0} \n‣𝘀𝘂̈𝗿𝗲: {2}\n🙍‍♂️𝗧𝗮𝗹𝗲𝗽 𝗲𝗱𝗲𝗻: {2}"
 stream_2 : "➻ **Yayın Başladı**\n\n👉 **Talep Eden :-** {0}"
 stream_3 : "✯ **Yayın Başladı** ✯\n\n↬ **Başlık :-** {0}\n⏰**Dakika**:- {1}\n👉 **Talep Eden :-** {2}"
 stream_4 : "➻ **Yayın Başladı**\n\n↬ **Başlık :-** [{0}]({1})\n⏰**Dakika**:- {2}\n👉 **Talep Eden :-** {3}"
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "💣 Kapat"
-CLOSEMENU_BUTTON  : "💣 Menüyü Kapat"
+CLOSE_BUTTON  : " Kapat"
+CLOSEMENU_BUTTON  : " Menüyü Kapat"
 BACK_BUTTON : "⬅ Geri"
 UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
 
@@ -261,7 +261,7 @@ L_B_1 : "  Şarkı Sözlerini Şimdi Kontrol Et"
 S_B_1 : "🗒 Komutlar"
 S_B_2 : "🔧 Ayarlar"
 S_B_3 : "📨 Destek Grubu"
-S_B_4 : "  Octopus Duyuru"
+S_B_4 : " 🥁 Duyuru"
 S_B_5 : "✚ Beni Grubuna Ekle"
 S_B_6 : "💡 Git Repo"
 S_B_7 : "👨‍💻 Sahip"
