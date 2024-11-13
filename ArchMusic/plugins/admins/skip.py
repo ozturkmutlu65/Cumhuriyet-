@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
-#
-# This file is part of < https://github.com/ArchBots/ArchMusic > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
@@ -21,7 +12,7 @@ from ArchMusic.utils.decorators import AdminRightsCheck
 from ArchMusic.utils.inline.play import (stream_markup,
                                           telegram_markup)
 from ArchMusic.utils.stream.autoclear import auto_clean
-from ArchMusic.utils.thumbnails import gen_thumb
+
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
@@ -123,15 +114,16 @@ async def skip(cli, message: Message, _, chat_id):
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
-        img = await gen_thumb(videoid)
-        run = await message.reply_photo(
-            photo=img,
-            caption=_["stream_1"].format(
-                user,
-                f"https://t.me/{app.username}?start=info_{videoid}",
-            ),
-            reply_markup=InlineKeyboardMarkup(button),
-        )
+        img = None
+        run = await message.reply_text(
+                text=_["stream_1"].format(
+                  title,
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    check[0]["dur"],
+                    user,
+                ),
+                reply_markup=InlineKeyboardMarkup(button),
+            )
         db[chat_id][0]["mystic"] = run
         db[chat_id][0]["markup"] = "tg"
     elif "vid_" in queued:
@@ -152,15 +144,16 @@ async def skip(cli, message: Message, _, chat_id):
         except Exception:
             return await mystic.edit_text(_["call_9"])
         button = stream_markup(_, videoid, chat_id)
-        img = await gen_thumb(videoid)
-        run = await message.reply_photo(
-            photo=img,
-            caption=_["stream_1"].format(
-                user,
-                f"https://t.me/{app.username}?start=info_{videoid}",
-            ),
-            reply_markup=InlineKeyboardMarkup(button),
-        )
+        img = None
+        run = await message.reply_text(
+                text=_["stream_1"].format(
+                  title,
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    check[0]["dur"],
+                    user,
+                ),
+                reply_markup=InlineKeyboardMarkup(button),
+            )
         db[chat_id][0]["mystic"] = run
         db[chat_id][0]["markup"] = "stream"
         await mystic.delete()
@@ -170,11 +163,15 @@ async def skip(cli, message: Message, _, chat_id):
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
-        run = await message.reply_photo(
-            photo=config.STREAM_IMG_URL,
-            caption=_["stream_2"].format(user),
-            reply_markup=InlineKeyboardMarkup(button),
-        )
+        run = await message.reply_text(
+                text=_["stream_2"].format(
+                  title,
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    check[0]["dur"],
+                    user,
+                ),
+                reply_markup=InlineKeyboardMarkup(button),
+            )
         db[chat_id][0]["mystic"] = run
         db[chat_id][0]["markup"] = "tg"
     else:
@@ -184,11 +181,8 @@ async def skip(cli, message: Message, _, chat_id):
             return await message.reply_text(_["call_9"])
         if videoid == "telegram":
             button = telegram_markup(_, chat_id)
-            run = await message.reply_photo(
-                photo=config.TELEGRAM_AUDIO_URL
-                if str(streamtype) == "audio"
-                else config.TELEGRAM_VIDEO_URL,
-                caption=_["stream_3"].format(
+            run = await message.reply_text(
+                text=_["stream_3"].format(
                     title, check[0]["dur"], user
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -197,11 +191,8 @@ async def skip(cli, message: Message, _, chat_id):
             db[chat_id][0]["markup"] = "tg"
         elif videoid == "soundcloud":
             button = telegram_markup(_, chat_id)
-            run = await message.reply_photo(
-                photo=config.SOUNCLOUD_IMG_URL
-                if str(streamtype) == "audio"
-                else config.TELEGRAM_VIDEO_URL,
-                caption=_["stream_3"].format(
+            run = await message.reply_text(
+                text=_["stream_3"].format(
                     title, check[0]["dur"], user
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -210,12 +201,13 @@ async def skip(cli, message: Message, _, chat_id):
             db[chat_id][0]["markup"] = "tg"
         else:
             button = stream_markup(_, videoid, chat_id)
-            img = await gen_thumb(videoid)
-            run = await message.reply_photo(
-                photo=img,
-                caption=_["stream_1"].format(
-                    user,
+            img = None
+            run = await message.reply_text(
+                text=_["stream_1"].format(
+                  title,
                     f"https://t.me/{app.username}?start=info_{videoid}",
+                    check[0]["dur"],
+                    user,
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
