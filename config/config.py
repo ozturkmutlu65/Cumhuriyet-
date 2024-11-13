@@ -223,7 +223,7 @@ autoclean = []
 
 START_IMG_URL = getenv(
      "START_IMG_URL", 
-     "https://i.imghippo.com/files/RR6Fy1726695292.jpg",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVLFVl0gIGQWKZ1Z7B4Vqw_Z9-05Xr3aHIw&usqp=CAU",
      
 
 )
