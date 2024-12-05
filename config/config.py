@@ -18,7 +18,7 @@ API_HASH = getenv("API_HASH", "bf9d41e73e2648911ee6c28fa94b76c2")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "7541238719:AAGzqYamn1xH5w8AtVHEF5ddzdhQ0HD0HFA")
 
 # Database to save your chats and stats.
 
@@ -46,13 +46,13 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002290079506"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","parsmusic 👩🏻‍✈️")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","tual")
 
 # Your User ID.
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "6778135170").split())
+    map(int, getenv("OWNER_ID", "7525037900").split())
 
 )  # Input type must be interger
 
@@ -183,7 +183,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for  vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "")
+STRING1 = getenv("STRING_SESSION", "BADNvmIAoazSaYBcTi59dvvSMlqRqMoqQmGOIiDtjmdCkpdA8CZ_jyB_mpGEW7chT-R6MgVmMh8nI4SmSDEGZ-cvhe1voLX-7GBnRqAWBvFJjBOV6l9N3bJbTJuirrOpgWi_WXdecgW6mnadp-eAv8w76ubw4EuMnOS69G_ONhx3VBYBTtC3S_yTpyUPR__Jg_tKkIu5j8Mkb2UuK4Ve2pGBDNxTc50FhgVpBnuaBPdv-l3NpN6RrFkW4JjkUQMQ7kYf35eLDDlB3O0t-59Tk-kNP5oWjtVYEeKhYNg7ws635sl-ghZI7VJ2iYaive8NkXm-71umauFW9-J_8roTvRpjB4I03AAAAAG5zzQDAA")
 
 STRING2 = getenv("STRING_SESSION2", None)
 
