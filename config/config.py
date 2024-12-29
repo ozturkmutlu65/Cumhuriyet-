@@ -52,7 +52,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","Cumhuriyet Muzik")
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "7190651301").split())
+    map(int, getenv("OWNER_ID", "7465402367").split())
 
 )  # Input type must be interger
 
@@ -69,7 +69,7 @@ UPSTREAM_REPO = getenv(
 
     "UPSTREAM_REPO",
 
-    "https://github.com/olurunabirak/Salak-kumsa",
+    "https://github.com/ozturkmutlu65/Cumhuriyet-",
 
 )
 
@@ -83,7 +83,7 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", "") # Example:- https://t.me/ArchBots
+    "SUPPORT_CHANNEL", "https://t.me/EtiketTaggerDuyuru") # Example:- https://t.me/ArchBots
 
 SUPPORT_GROUP = getenv(
 
